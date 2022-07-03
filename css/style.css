@@ -1,0 +1,349 @@
+/* ici on importe une police d'écriture */
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comfortaa&family=Josefin+Slab:wght@100&family=Nanum+Myeongjo&family=Nunito:wght@200&family=Roboto:wght@100&family=Secular+One&family=Syncopate&display=swap');
+
+/* j'utilise le selecteur universel pour appliquer cette regles a toutes mes variables */
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* ici je cree des variables css que j'appelais plus tard */
+
+:root {
+    --color-primary: #FF2C79;
+    --color-primary-hover: #2962FF;
+    --color-primary-alt: #FFFFFF;
+    --color-text-primary: #000000;
+}
+
+
+/* ici on joue avec le body le corp de la page appliquer sur tt les pages */
+
+body {
+    background-image: url(https://images.unsplash.com/photo-1580894732444-8ecded7900cd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: sans-serif;
+    font-weight: 800;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Debut de la decoration de la carte de la page index */
+
+.card {
+    background-color: var(--color-primary-alt);
+    border-radius: 0.25rem;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: absolute;
+    margin: 10% 0;
+    text-align: center;
+    position: absolute;
+    align-items: center;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+img {
+    width: 200px;
+}
+
+.card:hover {
+    transform: translate(-50%, -50%) scale(1.3);
+}
+
+.card:active {
+    background-color: var(--color-primary-hover);
+    color: var(--color-primary-alt);
+    padding: 0 5%;
+}
+
+
+/* Debut de la decoration de la navbar */
+
+.nav-item {
+    align-self: flex-end;
+    color: #3d6ded;
+}
+
+#nav-active {
+    color: var(--color-primary-hover);
+}
+
+.nav {
+    height: 50px;
+    width: 100%;
+    background-color: var(--color-primary-alt);
+    position: fixed;
+    top: 0;
+}
+
+.nav>.nav-header {
+    display: inline;
+}
+
+.nav>.nav-header>.nav-title {
+    display: inline-block;
+    font-size: 22px;
+    padding: 10px 10px 10px 10px;
+    text-decoration: none;
+    color: var(--color-primary);
+}
+
+.nav>.nav-header>.nav-title a,
+.nav>.nav-links>a,
+.link-card a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--color-primary);
+}
+
+.nav>.nav-btn {
+    display: none;
+}
+
+.nav>.nav-links {
+    display: inline;
+    float: right;
+    font-size: 18px;
+}
+
+.nav>.nav-links>a,
+.link-card a {
+    padding: 13px 10px 13px 10px;
+}
+
+.nav>.nav-links>a:hover,
+.nav>.nav-header>.nav-title a:hover,
+.link-card a:hover {
+    background-color: var(--color-primary);
+    color: var(--color-primary-alt);
+}
+
+.nav>#nav-check {
+    display: none;
+}
+
+
+/* fin de la decoration de la navbar */
+
+
+/* decoration de la premiere section de la page about */
+
+.about-section {
+    margin: 10% 10% 0;
+    color: var(--color-primary);
+    background-color: var(--color-primary-alt);
+    padding: 2%;
+}
+
+
+/* decoration du bouton de la premiere section de la page about */
+
+a {
+    text-decoration: none;
+}
+
+
+/* decoration de la section adress */
+
+.my-spot-section {
+    margin: 10% 10% 0;
+    color: var(--color-primary);
+    background-color: var(--color-primary-alt);
+    padding: 2%;
+    text-align: center;
+    padding-bottom: 200px;
+}
+
+
+/* decoration du formulaire de la page contact */
+
+form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    padding: 5% 10%;
+    background-color: var(--color-primary);
+    border-radius: 50px;
+    color: var(--color-primary-alt);
+}
+
+label,
+input,
+button,
+textarea {
+    display: block;
+    width: 100%;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+label {
+    margin-bottom: 4px;
+}
+
+label:nth-of-type(2) {
+    margin-top: 12px;
+}
+
+input::placeholder {
+    color: gray;
+}
+
+input,
+textarea {
+    background: #ecf0f3;
+    padding: 0 180px;
+    padding-left: 20px;
+    height: 50px;
+    font-size: 14px;
+    border-radius: 50px;
+    box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+}
+
+textarea {
+    resize: vertical;
+    max-height: 350px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+}
+
+
+/* fin de decoration du formulaire */
+
+button {
+    color: white;
+    margin-top: 20px;
+    background: var(--color-primary);
+    height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 900;
+    box-shadow: 6px 6px 6px #cbced1, -6px -6px 6px white;
+    transition: 0.5s;
+}
+
+button:hover {
+    box-shadow: none;
+}
+
+button:disabled {
+    background-color: var(--color-primary);
+    filter: grayscale(40%);
+}
+
+
+/* decoration du footer bas de page */
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--color-primary);
+    color: white;
+    text-align: center;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer-links a {
+    color: var(--color-primary-alt);
+    text-decoration: none;
+}
+
+@media (max-width:1200px) {
+    .card {
+        top: 30%;
+    }
+}
+
+@media (max-width:600px) {
+    .nav>.nav-btn {
+        display: inline-block;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+    .nav>.nav-btn>label {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        padding: 13px;
+    }
+    .nav>.nav-btn>label:hover,
+    .nav #nav-check:checked~.nav-btn>label {
+        background-color: var(--color-primary);
+        color: var(--color-primary-alt);
+    }
+    .nav>.nav-btn>label>span {
+        display: block;
+        width: 25px;
+        height: 10px;
+        border-top: 2px solid #eee;
+    }
+    .nav>.nav-links {
+        position: fixed;
+        display: block;
+        width: 100vh;
+        height: 100vh;
+        background-color: var(--color-primary-alt);
+        transition: all 0.3s ease-in;
+        overflow-y: hidden;
+        top: 50px;
+        left: 0px;
+        z-index: 9999999;
+        overflow: hidden;
+    }
+    .nav>.nav-links>a {
+        display: block;
+        width: 100%;
+    }
+    .nav>#nav-check:not(:checked)~.nav-links {
+        height: 0px;
+    }
+    .nav>#nav-check:checked~.nav-links {
+        height: calc(100vh - 50px);
+        overflow-y: auto;
+    }
+    .about-section {
+        margin: 20% 10% 0;
+        padding-bottom: 5%;
+    }
+    .card {
+        top: 40%;
+    }
+}
+
+@media (max-width:380px) {
+    input,
+    textarea {
+        background: #ecf0f3;
+        padding: 10px;
+        padding-left: 20px;
+        height: 50px;
+        font-size: 14px;
+        border-radius: 50px;
+        box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+    }
+}

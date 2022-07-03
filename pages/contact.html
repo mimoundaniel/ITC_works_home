@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/style.css" rel="stylesheet" />
+    <title>Contact</title>
+</head>
+
+<body>
+    <div class="nav">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+            <div class="nav-title">
+                <a href="https://www.itc.tech/" target="_blank" class="nav-item">Visit ITC</a>
+            </div>
+        </div>
+        <div class="nav-btn">
+            <label for="nav-check">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+        </div>
+
+        <div class="nav-links">
+            <a href="../index.html" target="_blank">Home</a>
+            <a href="about.html" target="_blank">About</a>
+            <a id="nav-active" href="contact.html" target="_blank">Contact</a>
+        </div>
+    </div>
+    <div>Contact Page</div>
+    <section class="contact-section">
+        <form action="https://formspree.io/f/mzbolbzb" method="POST">
+            <label>First Name: <input type="text" name="FirstName" required onkeyup="success()"
+                minlength="4" maxlength="20" size="10" id="textsend"></label>
+            <label>Last name:<input type="text" name="LastName"> </label>
+            <label>Your email:<input type="email" name="email" required id="textsend2" onkeyup="success()"> </label>
+            <label> Your comment:<br><textarea name="comment" required onkeyup="success()"
+                minlength="4" maxlength="500" size="10"  id="textsend3"></textarea> </label>
+            <!-- your other form fields go here -->
+            <button id="button" type="submit" disabled>Send</button>
+        </form>
+        <script>
+            function success() {
+                if (document.getElementById("textsend").value === "" || document.getElementById("textsend2").value === "" || document.getElementById("textsend3").value === "") {
+                    document.getElementById('button').disabled = true;
+                } else {
+                    document.getElementById('button').disabled = false;
+                }
+            }
+        </script>
+    </section>
+    <div class="footer">
+        <div class="footer-links">
+            <a href="../index.html" target="_blank">Home</a>
+            <a href="about.html" target="_blank">About</a>
+            <a href="contact.html" target="_blank">Contact</a>
+        </div>
+        <p>This page was built using: <span id="table"></span></p>
+    </div>
+    <script src="../js/footer.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/style.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <title>About</title>
+</head>
+
+<body>
+    <div class="nav">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+            <div class="nav-title">
+                <a href="https://www.itc.tech/" target="_blank" class="nav-item">Visit ITC</a>
+            </div>
+        </div>
+        <div class="nav-btn">
+            <label for="nav-check">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+        </div>
+
+        <div class="nav-links">
+            <a href="../index.html" target="_blank">Home</a>
+            <a id="nav-active" href="about.html" target="_blank">About</a>
+            <a href="contact.html" target="_blank">Contact</a>
+        </div>
+    </div>
+    <section class="about-section">
+        <h1>I am KimberleyUzan, passionate about new technologies and the computer world.</h1>
+        <h3>
+            My university course allowed me to learn the basics of programming. Being rather attracted by web development, I trained by the ITC school as well as self-taught by following training at OpenClassrooms as a FullStack web developer in order to improve
+            myself in this field! I love learning new working techniques and new languages!
+        </h3>
+        <a href="contact.html">
+            <button>Contact</button>
+        </a>
+    </section>
+    <section class="my-spot-section">
+        <h2>My adresses <i class="fa-solid fa-location-dot"></i></h2>
+        <hr style="width:50%">
+        <h2>I was born in: </h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83998.9185124463!2d2.347035!3d48.85885484999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1f06e2b70f%3A0x40b82c3688c9460!2sParis%2C%20France!5e0!3m2!1sfr!2sil!4v1656862174654!5m2!1sfr!2sil"
+            width="250" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <hr style="width:30%">
+        <h2>I would like to visit:</h2>
+        <div id="citys">
+            <div class="city active"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387191.33750346623!2d-73.97968099999999!3d40.6974881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20%C3%89tat%20de%20New%20York%2C%20%C3%89tats-Unis!5e0!3m2!1sfr!2sil!4v1656862247795!5m2!1sfr!2sil"
+                    width="250" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+            <div class="city"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d424141.6978944982!2d150.93197474999997!3d-33.84824395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b129838f39a743f%3A0x3017d681632a850!2sSydney%20Nouvelle-Galles%20du%20Sud%2C%20Australie!5e0!3m2!1sfr!2sil!4v1656862286863!5m2!1sfr!2sil"
+                    width="250" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+            <div class="city"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1662873.2451231668!2d139.7698121!3d35.50924045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x605d1b87f02e57e7%3A0x2e01618b22571b89!2sTokyo%2C%20Japon!5e0!3m2!1sfr!2sil!4v1656862360134!5m2!1sfr!2sil"
+                    width="250" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+        </div>
+        <div class="next-back-button">
+            <button type="button" id="back">Back</button>
+            <button type="button" id="next">Next</button>
+        </div>
+
+        <script src="../js/about.js"></script>
+        <style>
+            .city:not(.active) {
+                display: none;
+            }
+        </style>
+
+    </section>
+    <div class="footer">
+        <div class="footer-links">
+            <a href="../index.html" target="_blank">Home</a>
+            <a href="about.html" target="_blank">About</a>
+            <a href="contact.html" target="_blank">Contact</a>
+        </div>
+        <p>This page was built using: <span id="table"></span></p>
+    </div>
+    <script src="../js/footer.js"></script>
+
+</body>
+
+</html>
