@@ -177,7 +177,7 @@ form {
     transform: translate(-50%, -50%);
     display: flex;
     flex-direction: column;
-    padding: 5% 10%;
+    padding: 2% 10%;
     background-color: var(--color-primary);
     border-radius: 50px;
     color: var(--color-primary-alt);
@@ -186,7 +186,8 @@ form {
 label,
 input,
 button,
-textarea {
+textarea,
+select {
     display: block;
     width: 100%;
     padding: 0;
@@ -208,7 +209,8 @@ input::placeholder {
 }
 
 input,
-textarea {
+textarea,
+select {
     background: #ecf0f3;
     padding: 0 180px;
     padding-left: 20px;

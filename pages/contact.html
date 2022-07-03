@@ -40,7 +40,13 @@
             <label>Your email:<input type="email" name="email" required id="textsend2" onkeyup="success()"> </label>
             <label> Your comment:<br><textarea name="comment" required onkeyup="success()"
                 minlength="4" maxlength="500" size="10"  id="textsend3"></textarea> </label>
-            <!-- your other form fields go here -->
+            <label for="cars">Choose a car:</label>
+            <select name="cars" id="cars" form="carform">
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="opel">Opel</option>
+  <option value="audi">Audi</option>
+</select>
             <button id="button" type="submit" disabled>Send</button>
         </form>
         <script>
