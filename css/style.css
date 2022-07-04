@@ -51,7 +51,7 @@ body {
     text-align: center;
     position: absolute;
     align-items: center;
-    top: 20%;
+    top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -64,10 +64,31 @@ img {
     transform: translate(-50%, -50%) scale(1.3);
 }
 
+@-webkit-keyframes card {
+    to {
+        -webkit-transform: translate(-50%, -50%) scale(1.1);
+        transform: translate(-50%, -50%) scale(1.1);
+    }
+}
+
+@keyframes card {
+    to {
+        -webkit-transform: translate(-50%, -50%) scale(1.1);
+        transform: translate(-50%, -50%) scale(1.1);
+    }
+}
+
 .card:active {
-    background-color: var(--color-primary-hover);
-    color: var(--color-primary-alt);
-    padding: 0 5%;
+    -webkit-animation-name: card;
+    animation-name: card;
+    -webkit-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
 }
 
 
@@ -109,6 +130,15 @@ img {
     display: inline-block;
     text-decoration: none;
     color: var(--color-primary);
+}
+
+.link-card ul {
+    list-style: none;
+    column-count: 4;
+}
+
+.link-card li {
+    list-style-type: none;
 }
 
 .nav>.nav-btn {
