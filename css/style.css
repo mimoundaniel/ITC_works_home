@@ -12,8 +12,8 @@
 /* ici je cree des variables css que j'appelais plus tard */
 
 :root {
-    --color-primary: #FF2C79;
-    --color-primary-hover: #2962FF;
+    --color-primary: #000000;
+    --color-primary-hover: #FF2C79;
     --color-primary-alt: #FFFFFF;
     --color-text-primary: #000000;
 }
@@ -23,6 +23,7 @@
 
 body {
     background-image: url(https://images.unsplash.com/photo-1580894732444-8ecded7900cd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80);
+    background-color: var(--color-primary);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -74,7 +75,7 @@ img {
 
 .nav-item {
     align-self: flex-end;
-    color: #3d6ded;
+    color: var(--color-primary-hover);
 }
 
 #nav-active {
@@ -127,7 +128,7 @@ img {
 .nav>.nav-links>a:hover,
 .nav>.nav-header>.nav-title a:hover,
 .link-card a:hover {
-    background-color: var(--color-primary);
+    background-color: var(--color-primary-hover);
     color: var(--color-primary-alt);
 }
 
@@ -183,6 +184,10 @@ form {
     color: var(--color-primary-alt);
 }
 
+form h1 {
+    text-align: center;
+}
+
 label,
 input,
 button,
@@ -205,7 +210,7 @@ label:nth-of-type(2) {
 }
 
 input::placeholder {
-    color: gray;
+    color: var(--color-text-primary);
 }
 
 input,
@@ -217,7 +222,7 @@ select {
     height: 50px;
     font-size: 14px;
     border-radius: 50px;
-    box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+    box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px var(--color-primary-alt);
 }
 
 textarea {
@@ -227,28 +232,39 @@ textarea {
     font-weight: 800;
 }
 
+textarea::-webkit-resizer {
+    transform: scale(10);
+    color: aqua;
+}
+
 
 /* fin de decoration du formulaire */
 
 button {
-    color: white;
+    color: var(--color-text-primary);
     margin-top: 20px;
-    background: var(--color-primary);
+    background: var(--color-primary-hover);
     height: 40px;
     border-radius: 20px;
     cursor: pointer;
     font-weight: 900;
-    box-shadow: 6px 6px 6px #cbced1, -6px -6px 6px white;
+    box-shadow: 6px 6px 6px #cbced1, -6px -6px 6px var(--color-primary-alt);
     transition: 0.5s;
 }
 
 button:hover {
     box-shadow: none;
+    color: var(--color-primary-alt);
 }
 
 button:disabled {
-    background-color: var(--color-primary);
+    background-color: #cbced1;
     filter: grayscale(40%);
+    box-shadow: none;
+}
+
+button:disabled:hover {
+    color: var(--color-text-primary);
 }
 
 
@@ -260,7 +276,7 @@ button:disabled {
     bottom: 0;
     width: 100%;
     background-color: var(--color-primary);
-    color: white;
+    color: var(--color-primary-alt);
     text-align: center;
 }
 
@@ -345,7 +361,7 @@ button:disabled {
         padding-left: 20px;
         height: 50px;
         font-size: 14px;
-        border-radius: 50px;
-        box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+        border-radius: 20px;
+        box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px var(--color-primary-alt);
     }
 }

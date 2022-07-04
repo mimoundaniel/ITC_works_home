@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../css/style.css" rel="stylesheet" />
     <title>Contact</title>
+    <link rel="icon" type="image/x-icon" href="https://static.vecteezy.com/system/resources/previews/004/283/897/original/ku-logo-monogram-emblem-style-with-crown-shape-design-template-free-vector.jpg">
 </head>
 
 <body>
@@ -31,23 +32,23 @@
             <a id="nav-active" href="contact.html" target="_blank">Contact</a>
         </div>
     </div>
-    <div>Contact Page</div>
     <section class="contact-section">
         <form action="https://formspree.io/f/mzbolbzb" method="POST">
+            <h1>Contact form</h1>
             <label>First Name: <input type="text" name="FirstName" required onkeyup="success()"
                 minlength="4" maxlength="20" size="10" id="textsend"></label>
             <label>Last name:<input type="text" name="LastName"> </label>
             <label>Your email:<input type="email" name="email" required id="textsend2" onkeyup="success()"> </label>
             <label> Your comment:<br><textarea name="comment" required onkeyup="success()"
                 minlength="4" maxlength="500" size="10"  id="textsend3"></textarea> </label>
-            <label for="cars">Choose a car:</label>
+            <label for="cars">Choose a option:</label>
             <select name="cars" id="cars" form="carform">
-  <option value="volvo">Volvo</option>
-  <option value="saab">Saab</option>
-  <option value="opel">Opel</option>
-  <option value="audi">Audi</option>
+  <option value="fullWebsite">Full website</option>
+  <option value="ui">Ui</option>
+  <option value="ux">UX</option>
 </select>
             <button id="button" type="submit" disabled>Send</button>
+            <p>*the buttons are deactivated if the inputs are not filled in</p>
         </form>
         <script>
             function success() {
